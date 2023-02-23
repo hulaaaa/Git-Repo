@@ -4,24 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Materializze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/css/main.css">
-    <title>GitHub Lesson</title>
+
+    <title>Control point</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">A</a>
-        </li>
-        <li>
-            <a href="#">B</a>
-        </li>
-        <li>
-            <a href="#">C</a>
-        </li>
-        <h1>helloworld!</h1>
-    </ul>
+    <!--Nav-->
+    <nav>
+        <div class="nav-wrapper blue darken-3">
+            <a href="#" class="brand-logo">SN</a>
+        </div>
+    </nav>
+
+    <!--Main/Loging form-->
+    <div id="main" class="row">
+        <h1>Enter to SN</h1>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="login" type="text" class="validate">
+                    <label for="login">Login</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <p id="remCheck">
+                <label>
+                    <input type="checkbox" />
+                    <span>Remember me</span>
+                </label>
+            </p>
+            <a class="waves-effect blue darken-3 btn">ENTER</a>
+            <a id="create" href="#">
+                Create new account
+            </a>
+        </form>
+
+    </div>
+
+
+
+<!--Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
