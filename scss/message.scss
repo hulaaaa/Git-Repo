@@ -1,0 +1,203 @@
+nav{
+  .nav-wrapper{
+    padding: 0px 50px;
+    ul{
+
+      li{
+        a{
+          display: flex;
+          align-items: center;
+          img{
+            width: 64px;
+            margin-right: 10px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+main{
+  padding: 50px;
+  .menu{
+    ul{
+      li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+        height: fit-content;
+        transition: 0.4s all ;
+        &:hover{
+          background-color: rgb(220, 243, 252);
+          border-radius: 5px;
+        }
+        &.active{
+          background-color: rgb(220, 243, 252);
+          border-radius: 5px;
+        }
+        i{
+          color: rgb(13, 106, 180);
+          font-size: 20px;
+        }
+        a{
+          color: rgb(13, 106, 180);
+          font-weight: 600;
+          span.badge{
+            background-color: rgb(13, 106, 180);
+          }
+        }
+      }
+    }
+  }
+  .block{
+    display: flex;
+    box-shadow: 0px 6px 9px 0px rgba(0,0,0,0.29);
+    border-radius: 7px;
+    .leftContact{
+      overflow: scroll;
+      height: 600px;
+      flex: 4;
+
+      #activeChat{
+        background-color: rgb(19, 136, 215);
+        color: white;
+      }
+      #newSms{
+        p{
+          color: #1565c0;
+          font-weight: bold;
+        }
+        span{
+          background-color: #1388d7;
+        }
+      }
+      .chat{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        padding: 15px;
+        border: 1px solid rgba(192, 192, 192, 0.49);
+        border-radius: 7px;
+        border-right: none;
+        img{
+          width: 45px;
+          margin-right: 10px;
+        }
+        .chatName{
+          *{
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+
+    .dialog{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(192, 192, 192, 0.49);
+      flex: 8;
+      height: 600px;
+      border-radius: 7px;
+      padding: 25px;
+
+
+      .windowDialog{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .friendMessage{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          img{
+            width: 60px;
+            height: 60px ;
+          }
+          .sidetext{
+            display: flex;
+            flex-direction: column;
+            .sidemaintext{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+              h5{
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 15px;
+              }
+              p{
+                margin: 0;
+                padding: 0;
+                color: silver;
+              }
+            }
+            p{
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        .myMessage{
+          display: flex;
+          flex-direction: row-reverse;
+          width: 100%;
+          img{
+            width: 60px;
+            height: 60px ;
+          }
+          .sidetext{
+            display: flex;
+            flex-direction: column;
+            .sidemaintext{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+              h5{
+                margin: 0;
+                padding: 0;
+                font-weight: bold;
+                font-size: 15px;
+              }
+              p{
+                margin: 0;
+                padding: 0;
+                color: silver;
+              }
+            }
+            p{
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+
+      }
+
+      .send{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        input{
+          width: 90%;
+        }
+        a{
+          background-color: #1388d7;
+          i{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+  }

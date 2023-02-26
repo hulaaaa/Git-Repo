@@ -1,0 +1,102 @@
+nav{
+  .nav-wrapper{
+
+    padding: 0px 50px;
+    ul{
+
+      li{
+        a{
+          display: flex;
+          align-items: center;
+          img{
+            width: 64px;
+            margin-right: 10px;
+          }
+        }
+
+      }
+    }
+  }
+}
+main{
+  padding: 50px;
+  .menu{
+    ul{
+      li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        gap: 10px;
+        height: fit-content;
+        transition: 0.4s all ;
+        &:hover{
+          background-color: rgb(220, 243, 252);
+          border-radius: 5px;
+        }
+        &.active{
+          background-color: rgb(220, 243, 252);
+          border-radius: 5px;
+        }
+        i{
+          color: rgb(13, 106, 180);
+          font-size: 20px;
+        }
+        a{
+          color: rgb(13, 106, 180);
+          font-weight: 600;
+          span.badge{
+            background-color: rgb(13, 106, 180);
+          }
+        }
+      }
+    }
+  }
+  .block{
+
+    .topInBlock{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        input{
+          width: 250px;
+        }
+        input::placeholder{
+          padding: 10px;
+        }
+        i{
+          font-size: 15px;
+        }
+      }
+    }
+
+    .people{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .card{
+        .card-content {
+          .contentIco {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            p{
+              color: silver;
+            }
+          }
+        }
+        #spanName{
+          background-color: rgba(0, 0, 0, 0.58);
+          padding: 25px 30px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
